@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { SidebarModule } from 'ng-sidebar';
-
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,8 @@ import { SidebarModule } from 'ng-sidebar';
     CommonModule,
     BrowserModule,
     RouterModule,
-    SidebarModule.forRoot()
+    SidebarModule.forRoot(),
+    NzIconModule
   ],
   exports: [
     BrowserModule,

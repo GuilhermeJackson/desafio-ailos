@@ -1,1 +1,68 @@
+// Custom Theming for NG-ZORRO
+// For more information: https://ng.ant.design/docs/customize-theme/en
+@import "../node_modules/ng-zorro-antd/ng-zorro-antd.less";
+
+// Override less variables to here
+// View all variables: https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/components/style/themes/default.less
+
+@primary-color: #165c7d;
+@secundary-color: #FFA300;
+
+@azul-claro-ailos: #009ED0;
+@verde-ailos: #00C246;
+@azul-intermediario-ailos: #007D8A;
+
+@grey-pages-ailos: #e7eef1;
+@black-ailos: #040F14;
+
+
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0px;
+}
+
+button {
+  border-radius: 4px;
+}
+
+.ant-steps-item-process .ant-steps-item-icon {
+  border-color: @primary-color;
+  border-width: 3px;
+}
+
+.ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-icon {
+  background: #e7eef1;
+}
+
+.ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-icon .ant-steps-icon {
+  visibility: hidden;
+}
+
+.ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon {
+    visibility: hidden;
+}
+
+.ant-steps-item-icon,
+.ant-steps-item-content {
+  display: flex; //inline-block
+}
+
+// os que não estão selecionados
+.ant-steps-item-wait .ant-steps-item-icon {
+  background-color: #c6ced1;
+  border-color: #c6ced1;
+  border-width: 3px;
+}
+
+//linha
+.ant-steps-item-wait>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title::after {
+  background-color: #c6ced1
+}
+
+.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+    color: @primary-color;
+}
+
+.ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title::after {
+  background-color: @primary-color
+}

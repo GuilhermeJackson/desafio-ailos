@@ -1,1 +1,18 @@
-<p-steps [model]="items"></p-steps>
+<div class="container">
+  <nz-steps>
+    <nz-step nzTitle="Inicio"></nz-step>
+    <nz-step nzTitle="Documentos"></nz-step>
+    <nz-step nzTitle="Dados Cadastrais"></nz-step>
+    <nz-step nzTitle="Admissão"></nz-step>
+  </nz-steps>
+
+  <ng-template #progressTemplate let-dot let-status="status" let-index="index">
+    <span
+      nz-popover
+      nzPopoverContent="steps {{ index }} status: {{ status }}"
+      style="margin-left: -100%"
+    >
+      <ng-template [ngTemplateOutlet]="dot"></ng-template>
+    </span>
+  </ng-template>
+</div>

@@ -1,5 +1,6 @@
 <div class="container">
   <app-stepper></app-stepper>
-  <app-consult-cpf></app-consult-cpf>
-  <app-card-data-coperative></app-card-data-coperative>
+  <app-consult-cpf (cpfCoperated)="showDataCoperative($event)" ></app-consult-cpf>
+  <app-card-data-coperative [cooperated]="cooperated"></app-card-data-coperative>
 </div>
+<app-footer></app-footer>

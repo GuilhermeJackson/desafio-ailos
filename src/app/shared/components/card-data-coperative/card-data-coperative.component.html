@@ -1,18 +1,38 @@
-<div class="container">
-  <h2>Situação cadastral do CPF</h2>
-  <p>Consulta na Receita Federal</p>
-  <div class="user-data">
-    <p>icone</p>
-    <div class="user-data-name">
-      <p>nome</p>
-      <p>João Pereira</p>
+<div *ngIf="isViewCoperative()" >
+  <div class="container">
+
+    <div class="card-coperative">
+      <h2>Situação cadastral do CPF</h2>
+      <p>Consulta na Receita Federal</p>
+      <div class="user-data">
+        <span nz-icon nzType="user" nzTheme="outline"></span>
+        <div class="user-data-name">
+          <label>Nome</label>
+          <div>{{cooperated?.name}}</div>
+        </div>
+      </div>
+    
+      <div class="user-data">
+        <span [class]="cooperated?.situation === 'Ativo' ? 'check-green' : 'check-red'" nz-icon nzType="check-circle" nzTheme="outline"></span>
+        <div class="user-data-situation">
+          <label>Situação</label>
+          <div>{{cooperated?.situation}}</div>
+        </div>
+      </div>
+    </div>
+    <div *ngFor="let item of cooperated?.account" class="card-coperative">
+      <h2>{{item?.type}}</h2>
+      <p>Cooperativa {{item?.bank}}</p>
+      <div class="user-data">
+        <span nz-icon nzType="credit-card" nzTheme="outline"></span>
+        <div class="user-data-name">
+          <label>Número da conta</label>
+          <div>{{item?.number}}</div>
+        </div>
+      </div>
+      <div class="duplicate">
+        <strong>Duplicar</strong>
+      </div>
     </div>
   </div>
-  <div class="user-data">
-    <p>icone</p>
-    <div class="user-data-situation">
-        <div>Situação</div>
-        <div>Ativa</div>
-    </div>
-  </div>
-</div>
+
