@@ -1,27 +1,40 @@
 # DesafioAilos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
+Esse projeto tem como objetivo consultar os dados de um cooperado pelo CPF para verificar dados bancários.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Clonar o projeto
 
-## Code scaffolding
+```bash
+  https://github.com/GuilhermeJackson/desafio-ailos.git
+```
+Instale as dependências
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+  npm install
+```
 
-## Build
+Iniciar o projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+  ng serve
+ ```
+Navegar para a página 
+```bash
+http://localhost:4200/.
+```
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Dados fictícios consultas de cooperados por CPF
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Nome: Silvano Pereira, CPF = 222.222.222-22
+- Nome:Pedro da Silva, CPF = 333.333.333-33
+- Nome:Derik Cardoso, CPF = 111.111.111-11
+- Nome:David Johnson, CPF = 142.645.862-23
+- Nome:Joseph Cox, CPF = 145.433.984-10
+- Nome:Jimmy Soto, CPF = 532.623.111-22
+- Nome:Sheila Leonard, CPF = 222.623.876-19
+- Nome:Eric Orozco, CPF = 524.235.436-17
+- Nome:Donna Johnson, CPF = 189.743.345-70
+- Nome:Patricia Sanders, CPF = 171.191.411-99
